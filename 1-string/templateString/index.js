@@ -7,4 +7,8 @@ function getScore(id) {
 
 export default function getScoreOutput(person) {
   // TODO 8: 在这里写实现代码
+  const name = person.lastName + person.firstName;
+  const score = getScore(person.id);
+  const result = `你好，${name}！你的考试成绩为${score}分`;
+  return result;
 }
