@@ -7,8 +7,8 @@ export default class Student extends Person {
   }
 
   introduce() {
-    let father = super.introduce();
-    let result = `I am a Student. I am at Class ${this.klass}.`;
-    return father + ' ' + result;
+    const father = super.introduce();
+    const result = `I am a Student. I am at Class ${this.klass}.`;
+    return `${father} ${result}`;
   }
 }
